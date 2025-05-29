@@ -3,7 +3,7 @@ import Banner from "./Banner";
 import { useLoaderData, useOutletContext } from "react-router-dom";
 import SeasonalPlantCareTips from "./SeasonalPlantCareTips";
 import PlantCareMythsDebunked from "./PlantCareMythsDebunked";
-import PlantsCard from "./plantsCard";
+import PlantsCard from './plantsCard.jsx';
 
 const Home = () => {
   const plants = useLoaderData();
