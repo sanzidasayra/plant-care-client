@@ -41,13 +41,13 @@ const slides = [
     image: img5,
     title: "Sustainable & Smart Planting",
     description:
-      "Growing more with less is possible with sustainable plant care practices. Our eco-friendly planting techniques help you reduce water usage, minimize waste, and create a greener, more sustainable indoor garden. Whether you're using composting, choosing low-water plants, or implementing energy-efficient lighting, we provide you with the tools to make your gardening practices as environmentally friendly as possible. Embrace a greener future while still cultivating a thriving garden.",
+      "Growing more with less is possible with sustainable plant care practices. Our eco-friendly planting techniques help you reduce water usage, minimize waste, and create a greener, more sustainable indoor garden. Whether you're using composting, choosing low-water plants, or implementing energy-efficient lighting, we provide you with the tools to make your gardening practices as environmentally friendly as possible. ",
   },
   {
     image: img6,
     title: "Your Green Companion",
     description:
-      "Plant Care Tracker is more than just an app — it's your personal partner in your planting journey. Whether you're an experienced gardener or a beginner, our app provides helpful tips, reminders, and insights that make plant care easier and more enjoyable. Track your plants’ progress, set personalized goals, and receive notifications for all the essential care routines. With this app by your side, you’ll feel confident every step of the way, knowing your plants are getting the attention they deserve.",
+      "Plant Care Tracker is more than just an app — it's your personal partner in your planting journey. Whether you're an experienced gardener or a beginner, our app provides helpful tips, reminders, and insights that make plant care easier and more enjoyable. Track your plants’ progress, set personalized goals, and receive notifications for all the essential care routines.",
   },
 ];
 
