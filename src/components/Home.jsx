@@ -3,11 +3,11 @@ import Banner from "./Banner";
 import { useLoaderData, useOutletContext } from "react-router-dom";
 import SeasonalPlantCareTips from "./SeasonalPlantCareTips";
 import PlantCareMythsDebunked from "./PlantCareMythsDebunked";
-import PlantsCard from './plantsCard.jsx';
+import PlantsCards from "./PlantsCards";
 
 const Home = () => {
   const plants = useLoaderData();
-  const { isDarkMode } = useOutletContext(); // Access dark mode context
+  const { isDarkMode } = useOutletContext(); 
 
   return (
     <div
@@ -34,7 +34,7 @@ const Home = () => {
                 dark:bg-gray-800 dark:border-gray-700 dark:shadow-lg'
       >
         {plants.map((plant) => (
-          <PlantsCard key={plant._id} plant={plant} />        
+          <PlantsCards key={plant._id} plant={plant} />        
 
 
 ))}
