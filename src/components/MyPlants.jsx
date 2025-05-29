@@ -13,7 +13,9 @@ const MyPlants = () => {
     const userEmail = storedUser?.email;
 
     if (userEmail) {
-      fetch(`http://localhost:3000/plants?email=${userEmail}`)
+      fetch(
+        `https://plant-care-server-plum.vercel.app/plants?email=${userEmail}`
+      )
         .then((res) => res.json())
         .then((data) => setPlants(data))
         .catch((err) => {
@@ -38,7 +40,7 @@ const MyPlants = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/plants/${id}`, {
+        fetch(`https://plant-care-server-plum.vercel.app/plants/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

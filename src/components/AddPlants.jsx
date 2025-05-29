@@ -15,7 +15,7 @@ const AddPlants = () => {
       newPlant.wateringFrequency = newPlant.customWateringFrequency;
     }
 
-    fetch("http://localhost:3000/plants", {
+    fetch("https://plant-care-server-plum.vercel.app/plants", {
       method: "POST",
       headers: {
         "content-type": "application/json",

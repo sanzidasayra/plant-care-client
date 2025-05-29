@@ -21,7 +21,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const myPlantsLoader = async () => {
-  const res = await fetch("http://localhost:3000/plants");
+  const res = await fetch("https://plant-care-server-plum.vercel.app/plants");
   return res.json();
 };
 
@@ -34,7 +34,9 @@ const router = createBrowserRouter([
       {
         index: true,
         loader: async () => {
-          const res = await fetch("http://localhost:3000/plants/new");
+          const res = await fetch(
+            "https://plant-care-server-plum.vercel.app/plants/new"
+          );
           return res.json();
         },
         element: <Home />,
@@ -47,9 +49,9 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: async ({ params }) => {
-          const all = await fetch("http://localhost:3000/plants").then((r) =>
-            r.json()
-          );
+          const all = await fetch(
+            "https://plant-care-server-plum.vercel.app/plants"
+          ).then((r) => r.json());
           const found = all.find((p) => p._id === params.id);
           if (!found) throw new Error("Plant not found");
           return found;
@@ -77,7 +79,9 @@ const router = createBrowserRouter([
       {
         path: "allPlants",
         loader: async () =>
-          fetch("http://localhost:3000/plants").then((r) => r.json()),
+          fetch("https://plant-care-server-plum.vercel.app/plants").then((r) =>
+            r.json()
+          ),
         element: <AllPlants />,
       },
       { path: "update/:id", element: <UpdatePlant /> },

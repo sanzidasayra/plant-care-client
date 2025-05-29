@@ -12,7 +12,7 @@ export const AuthContext = createContext();
 export const fallbackAvatar =
   "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp";
 
-const DB_URL = "http://localhost:3000/users";
+const DB_URL = "https://plant-care-server-plum.vercel.app/users";
 
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);

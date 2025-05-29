@@ -9,7 +9,7 @@ const UpdatePlant = () => {
   const [plant, setPlant] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/plants`)
+    fetch(`https://plant-care-server-plum.vercel.app/plants`)
       .then((res) => res.json())
       .then((data) => {
         const foundPlant = data.find((p) => p._id === id);
@@ -27,7 +27,7 @@ const UpdatePlant = () => {
       wateringFrequency: form.wateringFrequency.value,
     };
 
-    fetch(`http://localhost:3000/plants/${id}`, {
+    fetch(`https://plant-care-server-plum.vercel.app/plants/${id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedPlant),

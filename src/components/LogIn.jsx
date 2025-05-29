@@ -61,7 +61,7 @@ const LogIn = () => {
 
       // Check if user exists in DB, if not, create
       const res = await fetch(
-        `http://localhost:3000/users?email=${user.email}`
+        `https://plant-care-server-plum.vercel.app/users?email=${user.email}`
       );
       const data = await res.json();
 
@@ -74,7 +74,7 @@ const LogIn = () => {
             "https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp",
         };
 
-        await fetch("http://localhost:3000/users", {
+        await fetch("https://plant-care-server-plum.vercel.app/users", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(newUser),
