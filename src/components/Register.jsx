@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../context/AuthProvider";
 import { toast } from "react-toastify";
-import BackgroundAnimation from "./BackGroundAnimation";
+import BackgroundAnimation from "./BackgroundAnimation";
 
 const Register = () => {
   const navigate = useNavigate();
