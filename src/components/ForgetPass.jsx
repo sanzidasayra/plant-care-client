@@ -11,6 +11,7 @@ const ForgetPass = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  
   useEffect(() => {
     const queryParams = new URLSearchParams(location.search);
     const emailFromLogin = queryParams.get("userEmail");
