@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useNavigate, useLocation } from "react-router"; // ✅ use react-router-dom
+import { useNavigate, useLocation } from "react-router-dom"; 
 import { sendPasswordResetEmail } from "firebase/auth";
 
 import { toast } from "react-toastify";

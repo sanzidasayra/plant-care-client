@@ -6,7 +6,7 @@ import {
 } from "firebase/auth";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate, useLocation } from "react-router";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { auth } from "../firebase/firebase";
 import { toast } from "react-toastify";
 import BackgroundAnimation from "./BackGroundAnimation";

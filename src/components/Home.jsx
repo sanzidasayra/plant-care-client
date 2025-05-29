@@ -1,6 +1,6 @@
 import React from "react";
 import Banner from "./Banner";
-import { useLoaderData, useOutletContext } from "react-router";
+import { useLoaderData, useOutletContext } from "react-router-dom";
 import PlantsCard from "./plantsCard";
 import SeasonalPlantCareTips from "./SeasonalPlantCareTips";
 import PlantCareMythsDebunked from "./PlantCareMythsDebunked";

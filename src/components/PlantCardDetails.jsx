@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useNavigate } from "react-router";
+import { useLoaderData, useNavigate } from "react-router-dom";
 
 const PlantCardDetails = () => {
   const plant = useLoaderData();
