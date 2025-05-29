@@ -1,9 +1,9 @@
 import React from "react";
 import Banner from "./Banner";
 import { useLoaderData, useOutletContext } from "react-router-dom";
-import PlantsCard from "./plantsCard";
 import SeasonalPlantCareTips from "./SeasonalPlantCareTips";
 import PlantCareMythsDebunked from "./PlantCareMythsDebunked";
+import PlantsCard from "./plantsCard";
 
 const Home = () => {
   const plants = useLoaderData();
@@ -34,8 +34,10 @@ const Home = () => {
                 dark:bg-gray-800 dark:border-gray-700 dark:shadow-lg'
       >
         {plants.map((plant) => (
-          <PlantsCard key={plant._id} plant={plant} />
-        ))}
+          <PlantsCard key={plant._id} plant={plant} />        
+
+
+))}
       </div>
       <SeasonalPlantCareTips />
       <PlantCareMythsDebunked />
