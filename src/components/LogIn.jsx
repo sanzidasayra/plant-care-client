@@ -9,7 +9,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { auth } from "../firebase/firebase";
 import { toast } from "react-toastify";
-import BackgroundAnimation from "./BackGroundAnimation";
+import Bg from "./Bg";
 
 const LogIn = () => {
   const [error, setError] = useState("");
@@ -102,7 +102,7 @@ const LogIn = () => {
   return (
     <div className='flex justify-center items-center min-h-screen px-4 relative z-10'>
       <div className='absolute w-10/12 hidden lg:inline z-0'>
-        <BackgroundAnimation />
+        <Bg />
       </div>
 
       <div className='card bg-base-100 w-full max-w-xl shadow-2xl lg:p-8 z-10'>

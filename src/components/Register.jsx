@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../context/AuthProvider";
 import { toast } from "react-toastify";
-import BackgroundAnimation from "./BackgroundAnimation";
+import Bg from "./Bg";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -45,7 +45,7 @@ const Register = () => {
   return (
     <div className='relative flex justify-center min-h-screen items-center px-4'>
       <div className='absolute w-11/12 hidden lg:inline'>
-        <BackgroundAnimation />
+        <Bg />
       </div>
       <div className='card bg-base-100 w-full max-w-xl shadow-2xl lg:p-8 z-10 relative'>
         <h1 className='font-semibold text-center text-3xl pb-4 text-green-800'>
